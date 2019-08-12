@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 using System.Threading.Tasks;
-
+using MDT.UseCase;
 
 namespace MDT.Web
 {
@@ -10,6 +10,15 @@ namespace MDT.Web
     [EnableCors("AllowOrigin")]
     public class HomeController : ControllerBase
     {
+
+        private readonly HomeUseCase homeUseCase;
+
+
+        public HomeController(HomeUseCase homeUseCase)
+        {
+            this.homeUseCase = homeUseCase;
+        }
+
 
         [HttpGet]
         [EnableCors("AllowOrigin")]
@@ -32,5 +41,22 @@ namespace MDT.Web
                 return Ok(food);
             });
         }
+
+        
+        [HttpGet]
+        [EnableCors("AllowOrigin")]
+        public async Task<IActionResult> GetEmpleados()
+        {
+            var empleados = new 
+            {
+                empleados = await homeUseCase.ObtenerListaEmpleados()
+
+            };
+
+            return Ok(empleados);
+
+        }
+
+
     }
 }

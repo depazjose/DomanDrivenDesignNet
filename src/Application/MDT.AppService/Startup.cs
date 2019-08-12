@@ -4,12 +4,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MDT.Model.Data;
+using MDT.Model.Gateway;
+using MDT.MongoDb.Entities;
+using MDT.UseCase;
+using System;
 
 namespace MDT.AppService
 {
     public class Startup
     {
-      private readonly string MyAllowSpecificOrigins = "AllowOrigin";
+        private readonly string MyAllowSpecificOrigins = "AllowOrigin";
 
 
         public Startup(IConfiguration configuration)
@@ -22,16 +27,40 @@ namespace MDT.AppService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          services.AddCors(options =>
-            {
-                options.AddPolicy(MyAllowSpecificOrigins,
-                builder =>
-                {
-                    builder.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-                });
-            });
+
+            var appSettings = Configuration.GetSection("AppSettings").Get<TPMenuAppSetings>();
+            var mongoKey = appSettings.TPMenuDatabaseString;
+            var mongoConn = mongoKey;// GetConnection(mongoKey);
+            Console.Out.WriteLine(mongoKey + "|"+appSettings.DatabaseMenu);
+ 
+ 
+            services.AddScoped<IEmpleadoRepository>(provider =>
+             new EmpleadoAdapter(mongoConn, $"{appSettings.DatabaseMenu}")
+            );
+
+            services.BuildServiceProvider().GetService<IEmpleadoRepository>();
+            services.AddTransient<HomeUseCase>();
+
+            var servicesProvider = services.BuildServiceProvider();
+
+            services.AddTransient<HomeUseCase>(provider => new HomeUseCase(servicesProvider.GetRequiredService<IEmpleadoRepository>()));
+
+            HomeUseCase homeUseCase = services.BuildServiceProvider().GetService<HomeUseCase>();
+
+            var abc="bac";
+
+
+
+            services.AddCors(options =>
+              {
+                  options.AddPolicy(MyAllowSpecificOrigins,
+                  builder =>
+                  {
+                      builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                  });
+              });
 
             services.Configure<CookiePolicyOptions>(options =>
             {

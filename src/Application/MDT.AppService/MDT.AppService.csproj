@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
      <StartupObject></StartupObject>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <CodeAnalysisRuleSet>MDT.AppService.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
 
@@ -16,6 +17,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Infrastructure\EntryPoint\MDT.Web\MDT.Web.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\DrivenAdapter\MDT.MongoDb\MDT.MongoDb.csproj" />
+    <ProjectReference Include="..\..\Domain\MDT.Model\MDT.Model.csproj" />
+    <ProjectReference Include="..\..\Domain\MDT.UseCase\MDT.UseCase.csproj" />
   </ItemGroup>
 
 </Project>

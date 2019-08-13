@@ -1,4 +1,4 @@
-# MDT -Doman Driven Design- Application
+# MDT -Domain Driven Design- Application
 
 Domain Driven Design Net is a RESTful API service developed in .Net Core 2.2
 

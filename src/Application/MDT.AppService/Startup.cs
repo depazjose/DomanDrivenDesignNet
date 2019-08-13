@@ -47,10 +47,6 @@ namespace MDT.AppService
 
             HomeUseCase homeUseCase = services.BuildServiceProvider().GetService<HomeUseCase>();
 
-            var abc="bac";
-
-
-
             services.AddCors(options =>
               {
                   options.AddPolicy(MyAllowSpecificOrigins,

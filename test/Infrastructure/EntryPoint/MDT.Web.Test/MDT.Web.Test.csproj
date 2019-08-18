@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>  
     <IsPackable>false</IsPackable>
     <ProjectGuid>{b85deac7-711a-4b93-b24c-d3772aefd224}</ProjectGuid>
+    <SonarQubeTestProject>true</SonarQubeTestProject>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,13 +4,11 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>  
     <IsPackable>false</IsPackable>
     <ProjectGuid>{b85deac7-711a-4b93-b24c-d3772aefd224}</ProjectGuid>
+    <SonarQubeTestProject>true</SonarQubeTestProject>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.msbuild" Version="2.6.3">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
+    <PackageReference Include="coverlet.msbuild" Version="2.6.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="CsvHelper" Version="12.1.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" /> 

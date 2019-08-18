@@ -1,0 +1,633 @@
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Program.cs
+FN:8,System.Void MDT.AppService.Program::Main(System.String[])
+FNDA:0,System.Void MDT.AppService.Program::Main(System.String[])
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+BRDA:11,14,0,0
+BRDA:11,14,1,0
+FN:18,Microsoft.AspNetCore.Hosting.IWebHostBuilder MDT.AppService.Program::CreateWebHostBuilder(System.String[])
+FNDA:0,Microsoft.AspNetCore.Hosting.IWebHostBuilder MDT.AppService.Program::CreateWebHostBuilder(System.String[])
+DA:19,0
+DA:20,0
+LF:10
+LH:0
+BRF:2
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Startup.cs
+FN:24,Microsoft.Extensions.Configuration.IConfiguration MDT.AppService.Startup::get_Configuration()
+FNDA:0,Microsoft.Extensions.Configuration.IConfiguration MDT.AppService.Startup::get_Configuration()
+DA:25,0
+FN:28,System.Void MDT.AppService.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,System.Void MDT.AppService.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:29,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:44,0
+DA:46,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:69,0
+DA:70,0
+DA:71,0
+BRDA:61,200,0,0
+BRDA:61,200,1,0
+FN:74,System.Void MDT.AppService.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)
+FNDA:0,System.Void MDT.AppService.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:84,0
+DA:85,0
+DA:87,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+BRDA:76,9,0,0
+BRDA:76,9,1,0
+FN:16,System.Void MDT.AppService.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+FNDA:0,System.Void MDT.AppService.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)
+DA:17,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+LF:52
+LH:0
+BRF:10
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/TPMenuAppSetings.cs
+FN:5,System.String MDT.AppService.TPMenuAppSetings::get_TPMenuDatabaseString()
+FNDA:0,System.String MDT.AppService.TPMenuAppSetings::get_TPMenuDatabaseString()
+DA:6,0
+FN:7,System.String MDT.AppService.TPMenuAppSetings::get_DatabaseMenu()
+FNDA:0,System.String MDT.AppService.TPMenuAppSetings::get_DatabaseMenu()
+DA:8,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Error.cshtml.cs
+FN:13,System.String MDT.AppService.Pages.ErrorModel::get_RequestId()
+FNDA:0,System.String MDT.AppService.Pages.ErrorModel::get_RequestId()
+DA:14,0
+FN:15,System.Boolean MDT.AppService.Pages.ErrorModel::get_ShowRequestId()
+FNDA:0,System.Boolean MDT.AppService.Pages.ErrorModel::get_ShowRequestId()
+DA:16,0
+FN:18,System.Void MDT.AppService.Pages.ErrorModel::OnGet()
+FNDA:0,System.Void MDT.AppService.Pages.ErrorModel::OnGet()
+DA:19,0
+DA:20,0
+DA:21,0
+BRDA:20,8,0,0
+BRDA:20,8,1,0
+BRDA:20,20,0,0
+BRDA:20,20,1,0
+LF:5
+LH:0
+BRF:4
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Index.cshtml.cs
+FN:12,System.Void MDT.AppService.Pages.IndexModel::OnGet()
+FNDA:0,System.Void MDT.AppService.Pages.IndexModel::OnGet()
+DA:13,0
+DA:15,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Privacy.cshtml.cs
+FN:12,System.Void MDT.AppService.Pages.PrivacyModel::OnGet()
+FNDA:0,System.Void MDT.AppService.Pages.PrivacyModel::OnGet()
+DA:13,0
+DA:14,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Domain/MDT.Model/Empleado.cs
+FN:4,System.String MDT.Model.Empleado::get_Codigo()
+FNDA:2,System.String MDT.Model.Empleado::get_Codigo()
+DA:5,2
+FN:5,System.String MDT.Model.Empleado::get_Nombre()
+FNDA:2,System.String MDT.Model.Empleado::get_Nombre()
+DA:6,2
+FN:6,System.String MDT.Model.Empleado::get_Apellido()
+FNDA:2,System.String MDT.Model.Empleado::get_Apellido()
+DA:7,2
+FN:8,System.Void MDT.Model.Empleado::.ctor(System.String,System.String,System.String)
+FNDA:1,System.Void MDT.Model.Empleado::.ctor(System.String,System.String,System.String)
+DA:9,1
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
+LF:9
+LH:9
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Domain/MDT.Model/ResponseObject.cs
+FN:12,MDT.Model.ResponseObject MDT.Model.ResponseObject::Build(MDT.Model.Empleado)
+FNDA:0,MDT.Model.ResponseObject MDT.Model.ResponseObject::Build(MDT.Model.Empleado)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:6,System.Void MDT.Model.ResponseObject::.ctor(MDT.Model.Empleado)
+FNDA:0,System.Void MDT.Model.ResponseObject::.ctor(MDT.Model.Empleado)
+DA:7,0
+DA:8,0
+DA:9,0
+DA:10,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/Context.cs
+FN:19,MongoDB.Driver.IMongoCollection`1<MDT.MongoDb.Entities.EmpleadoEntity> MDT.MongoDb.Context::get_Empleados()
+FNDA:1,MongoDB.Driver.IMongoCollection`1<MDT.MongoDb.Entities.EmpleadoEntity> MDT.MongoDb.Context::get_Empleados()
+DA:20,1
+DA:21,1
+DA:22,1
+FN:10,System.Void MDT.MongoDb.Context::.ctor(System.String,System.String)
+FNDA:6,System.Void MDT.MongoDb.Context::.ctor(System.String,System.String)
+DA:11,6
+DA:12,6
+DA:13,6
+DA:14,6
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/DBAccess.cs
+FN:10,System.Void MDT.MongoDb.DBAccess::set_Empleado(Microsoft.EntityFrameworkCore.DbSet`1<MDT.MongoDb.Entities.EmpleadoEntity>)
+FNDA:0,System.Void MDT.MongoDb.DBAccess::set_Empleado(Microsoft.EntityFrameworkCore.DbSet`1<MDT.MongoDb.Entities.EmpleadoEntity>)
+DA:11,0
+FN:15,System.Void MDT.MongoDb.DBAccess::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void MDT.MongoDb.DBAccess::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:16,0
+DA:17,0
+DA:18,0
+FN:11,System.Void MDT.MongoDb.DBAccess::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<MDT.MongoDb.DBAccess>)
+FNDA:0,System.Void MDT.MongoDb.DBAccess::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<MDT.MongoDb.DBAccess>)
+DA:12,0
+DA:13,0
+DA:14,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/EmpleadoImpl.cs
+FN:24,System.Threading.Tasks.Task`1<MDT.Model.Empleado> MDT.MongoDb.EmpleadoImpl::ObtenerEmpleadoPorCodigo(System.String)
+FNDA:0,System.Threading.Tasks.Task`1<MDT.Model.Empleado> MDT.MongoDb.EmpleadoImpl::ObtenerEmpleadoPorCodigo(System.String)
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+FN:31,System.Collections.Generic.List`1<MDT.Model.Empleado> MDT.MongoDb.EmpleadoImpl::ObtenerListaEmpleados()
+FNDA:0,System.Collections.Generic.List`1<MDT.Model.Empleado> MDT.MongoDb.EmpleadoImpl::ObtenerListaEmpleados()
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:43,0
+FN:45,System.Void MDT.MongoDb.EmpleadoImpl::Dispose()
+FNDA:0,System.Void MDT.MongoDb.EmpleadoImpl::Dispose()
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+FN:51,System.Void MDT.MongoDb.EmpleadoImpl::Dispose(System.Boolean)
+FNDA:0,System.Void MDT.MongoDb.EmpleadoImpl::Dispose(System.Boolean)
+DA:52,0
+DA:54,0
+FN:56,System.Void MDT.MongoDb.EmpleadoImpl::Finalize()
+FNDA:0,System.Void MDT.MongoDb.EmpleadoImpl::Finalize()
+DA:57,0
+DA:58,0
+DA:59,0
+FN:17,System.Void MDT.MongoDb.EmpleadoImpl::.ctor(MDT.MongoDb.DBAccess,Microsoft.EntityFrameworkCore.DbContextOptions`1<MDT.MongoDb.DBAccess>)
+FNDA:0,System.Void MDT.MongoDb.EmpleadoImpl::.ctor(MDT.MongoDb.DBAccess,Microsoft.EntityFrameworkCore.DbContextOptions`1<MDT.MongoDb.DBAccess>)
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+LF:30
+LH:0
+BRF:0
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/MapperObject.cs
+FN:9,AutoMapper.IMapper MDT.MongoDb.MapperObject::get_mapper()
+FNDA:4,AutoMapper.IMapper MDT.MongoDb.MapperObject::get_mapper()
+DA:10,4
+FN:10,AutoMapper.IMapper MDT.MongoDb.MapperObject::get_mapperWithConstructor()
+FNDA:4,AutoMapper.IMapper MDT.MongoDb.MapperObject::get_mapperWithConstructor()
+DA:11,4
+LF:2
+LH:2
+BRF:2
+BRH:2
+FNF:2
+FNH:2
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/Entities/EmpleadoAdapter.cs
+FN:23,System.Threading.Tasks.Task`1<MDT.Model.Empleado> MDT.MongoDb.Entities.EmpleadoAdapter::ObtenerEmpleadoPorCodigo(System.String)
+FNDA:0,System.Threading.Tasks.Task`1<MDT.Model.Empleado> MDT.MongoDb.Entities.EmpleadoAdapter::ObtenerEmpleadoPorCodigo(System.String)
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+FN:31,System.Collections.Generic.List`1<MDT.Model.Empleado> MDT.MongoDb.Entities.EmpleadoAdapter::ObtenerListaEmpleados()
+FNDA:1,System.Collections.Generic.List`1<MDT.Model.Empleado> MDT.MongoDb.Entities.EmpleadoAdapter::ObtenerListaEmpleados()
+DA:32,1
+DA:33,1
+DA:34,1
+DA:36,1
+DA:37,2
+DA:38,2
+DA:39,2
+DA:40,2
+DA:41,1
+DA:43,1
+FN:17,System.Void MDT.MongoDb.Entities.EmpleadoAdapter::.ctor(System.String,System.String)
+FNDA:6,System.Void MDT.MongoDb.Entities.EmpleadoAdapter::.ctor(System.String,System.String)
+DA:18,6
+DA:19,6
+DA:20,6
+DA:21,6
+LF:20
+LH:14
+BRF:0
+BRH:0
+FNF:3
+FNH:2
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/DrivenAdapter/MDT.MongoDb/Entities/EmpleadoEntity.cs
+FN:11,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Id()
+FNDA:1,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Id()
+DA:12,1
+FN:14,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Codigo()
+FNDA:3,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Codigo()
+DA:15,3
+FN:17,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Nombre()
+FNDA:3,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Nombre()
+DA:18,3
+FN:20,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Apellido()
+FNDA:3,System.String MDT.MongoDb.Entities.EmpleadoEntity::get_Apellido()
+DA:21,3
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Domain/MDT.UseCase/HomeUseCase.cs
+FN:19,System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<MDT.Model.Empleado>> MDT.UseCase.HomeUseCase::ObtenerListaEmpleados()
+FNDA:1,System.Threading.Tasks.Task`1<System.Collections.Generic.List`1<MDT.Model.Empleado>> MDT.UseCase.HomeUseCase::ObtenerListaEmpleados()
+DA:20,1
+DA:21,1
+DA:22,2
+DA:23,1
+DA:24,2
+DA:25,2
+DA:26,1
+DA:27,1
+DA:28,1
+DA:29,1
+DA:30,1
+DA:31,1
+DA:32,2
+DA:33,1
+FN:13,System.Void MDT.UseCase.HomeUseCase::.ctor(MDT.Model.Gateway.IEmpleadoRepository)
+FNDA:3,System.Void MDT.UseCase.HomeUseCase::.ctor(MDT.Model.Gateway.IEmpleadoRepository)
+DA:14,3
+DA:15,3
+DA:16,3
+DA:17,3
+LF:18
+LH:18
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Infrastructure/EntryPoint/MDT.Web/HomeController.cs
+FN:38,Microsoft.AspNetCore.Mvc.OkObjectResult MDT.Web.HomeController::<GetFood>b__3_0()
+FNDA:2,Microsoft.AspNetCore.Mvc.OkObjectResult MDT.Web.HomeController::<GetFood>b__3_0()
+DA:39,2
+DA:40,2
+DA:41,2
+DA:42,2
+FN:16,System.Void MDT.Web.HomeController::.ctor(MDT.UseCase.HomeUseCase)
+FNDA:3,System.Void MDT.Web.HomeController::.ctor(MDT.UseCase.HomeUseCase)
+DA:17,3
+DA:18,3
+DA:19,3
+DA:20,3
+FN:27,Microsoft.AspNetCore.Mvc.OkObjectResult MDT.Web.HomeController/<>c__DisplayClass2_0::<GetFoo>b__0()
+FNDA:2,Microsoft.AspNetCore.Mvc.OkObjectResult MDT.Web.HomeController/<>c__DisplayClass2_0::<GetFoo>b__0()
+DA:28,2
+DA:29,2
+DA:30,2
+DA:31,2
+FN:25,System.Void MDT.Web.HomeController/<GetFoo>d__2::MoveNext()
+FNDA:1,System.Void MDT.Web.HomeController/<GetFoo>d__2::MoveNext()
+DA:26,1
+DA:27,1
+DA:32,1
+BRDA:27,95,0,1
+BRDA:27,95,1,1
+FN:36,System.Void MDT.Web.HomeController/<GetFood>d__3::MoveNext()
+FNDA:1,System.Void MDT.Web.HomeController/<GetFood>d__3::MoveNext()
+DA:37,1
+DA:38,1
+DA:43,1
+BRDA:38,50,0,1
+BRDA:38,50,1,1
+FN:48,System.Void MDT.Web.HomeController/<GetEmpleados>d__4::MoveNext()
+FNDA:1,System.Void MDT.Web.HomeController/<GetEmpleados>d__4::MoveNext()
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+DA:53,1
+DA:54,1
+DA:56,1
+DA:58,1
+BRDA:50,44,0,1
+BRDA:50,44,1,1
+LF:26
+LH:26
+BRF:6
+BRH:6
+FNF:6
+FNH:6
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Error.cshtml
+FN:3,System.Void MDT.AppService.Pages.Pages_Error/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Pages_Error/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:10,0
+DA:11,0
+DA:13,0
+DA:15,0
+LF:5
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Index.cshtml
+FN:3,System.Void MDT.AppService.Pages.Pages_Index/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Pages_Index/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Privacy.cshtml
+FN:3,System.Void MDT.AppService.Pages.Pages_Privacy/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Pages_Privacy/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:6,0
+LF:2
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/_ViewStart.cshtml
+FN:1,System.Void MDT.AppService.Pages.Pages__ViewStart/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Pages__ViewStart/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Shared/_CookieConsentPartial.cshtml
+FN:3,System.Void MDT.AppService.Pages.Shared.Pages_Shared__CookieConsentPartial/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Shared.Pages_Shared__CookieConsentPartial/<ExecuteAsync>d__8::MoveNext()
+DA:4,0
+DA:5,0
+DA:6,0
+DA:9,0
+DA:10,0
+DA:13,0
+DA:25,0
+BRDA:4,14,0,0
+BRDA:5,109,0,0
+BRDA:5,109,1,0
+BRDA:6,136,0,0
+BRDA:6,136,1,0
+BRDA:9,208,0,0
+BRDA:10,485,0,0
+BRDA:10,485,1,0
+BRDA:10,590,0,0
+BRDA:10,623,0,0
+BRDA:4,14,1,0
+BRDA:10,623,1,0
+BRDA:10,590,1,0
+BRDA:9,208,1,0
+LF:7
+LH:0
+BRF:14
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/home/tuxito/DevCode/GIT/NetCore/DomanDrivenDesignNet/src/Application/MDT.AppService/Pages/Shared/_Layout.cshtml
+FN:5,System.Void MDT.AppService.Pages.Shared.Pages_Shared__Layout/<<ExecuteAsync>b__43_0>d::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Shared.Pages_Shared__Layout/<<ExecuteAsync>b__43_0>d::MoveNext()
+DA:6,0
+BRDA:6,8,0,0
+BRDA:6,452,0,0
+BRDA:6,8,1,0
+BRDA:6,452,1,0
+BRDA:6,555,0,0
+BRDA:6,588,0,0
+BRDA:6,8,2,0
+BRDA:6,588,1,0
+BRDA:6,555,1,0
+BRDA:6,1006,0,0
+BRDA:6,8,3,0
+BRDA:6,1006,1,0
+BRDA:6,1113,0,0
+BRDA:6,1146,0,0
+BRDA:6,8,4,0
+BRDA:6,1146,1,0
+BRDA:6,1113,1,0
+BRDA:6,1395,0,0
+BRDA:6,1395,1,0
+BRDA:6,1565,0,0
+BRDA:6,8,5,0
+BRDA:6,1565,1,0
+BRDA:6,1672,0,0
+BRDA:6,1705,0,0
+BRDA:6,8,6,0
+BRDA:6,1705,1,0
+BRDA:6,1672,1,0
+FN:44,System.Void MDT.AppService.Pages.Shared.Pages_Shared__Layout/<<ExecuteAsync>b__43_1>d::MoveNext()
+FNDA:0,System.Void MDT.AppService.Pages.Shared.Pages_Shared__Layout/<<ExecuteAsync>b__43_1>d::MoveNext()
+DA:45,0
+DA:73,0
+DA:75,0
+BRDA:45,8,0,0
+BRDA:45,507,0,0
+BRDA:45,8,1,0
+BRDA:45,507,1,0
+BRDA:45,610,0,0
+BRDA:45,643,0,0
+BRDA:45,8,2,0
+BRDA:45,643,1,0
+BRDA:45,610,1,0
+BRDA:45,1138,0,0
+BRDA:45,8,3,0
+BRDA:45,1138,1,0
+BRDA:45,1245,0,0
+BRDA:45,1278,0,0
+BRDA:45,8,4,0
+BRDA:45,1278,1,0
+BRDA:45,1245,1,0
+BRDA:45,1770,0,0
+BRDA:45,8,5,0
+BRDA:45,1770,1,0
+BRDA:45,1877,0,0
+BRDA:45,1910,0,0
+BRDA:45,8,6,0
+BRDA:45,1910,1,0
+BRDA:45,1877,1,0
+BRDA:45,2163,0,0
+BRDA:45,2163,1,0
+BRDA:45,2343,0,0
+BRDA:45,8,7,0
+BRDA:45,2343,1,0
+BRDA:45,2450,0,0
+BRDA:45,2483,0,0
+BRDA:45,8,8,0
+BRDA:45,2483,1,0
+BRDA:45,2450,1,0
+BRDA:45,3060,0,0
+BRDA:45,8,9,0
+BRDA:45,3060,1,0
+BRDA:45,3167,0,0
+BRDA:45,3200,0,0
+BRDA:45,8,10,0
+BRDA:45,3200,1,0
+BRDA:45,3167,1,0
+BRDA:45,3620,0,0
+BRDA:45,8,11,0
+BRDA:45,3620,1,0
+BRDA:45,3728,0,0
+BRDA:45,3761,0,0
+BRDA:45,8,12,0
+BRDA:45,3761,1,0
+BRDA:45,3728,1,0
+BRDA:45,4180,0,0
+BRDA:45,8,13,0
+BRDA:45,4180,1,0
+BRDA:45,4288,0,0
+BRDA:45,4321,0,0
+BRDA:45,8,14,0
+BRDA:45,4321,1,0
+BRDA:45,4288,1,0
+BRDA:45,4571,0,0
+BRDA:45,4571,1,0
+BRDA:73,4868,0,0
+BRDA:45,8,15,0
+BRDA:73,4868,1,0
+BRDA:73,4976,0,0
+BRDA:73,5009,0,0
+BRDA:45,8,16,0
+BRDA:73,5009,1,0
+BRDA:73,4976,1,0
+LF:4
+LH:0
+BRF:96
+BRH:0
+FNF:2
+FNH:0
+end_of_record

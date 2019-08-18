@@ -7,6 +7,11 @@ namespace MDT.AppService
     {
         public static void Main(string[] args)
         {
+            string myarg = string.Empty;
+            if (args.Length>0)
+            {
+                myarg = args[0];
+            }
             CreateWebHostBuilder(args).Build().Run();
         }
 

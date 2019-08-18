@@ -30,7 +30,7 @@ namespace MDT.AppService
 
             var appSettings = Configuration.GetSection("AppSettings").Get<TPMenuAppSetings>();
             var mongoKey = appSettings.TPMenuDatabaseString;
-            var mongoConn = mongoKey;// GetConnection(mongoKey);
+            var mongoConn = mongoKey;
             Console.Out.WriteLine(mongoKey + "|"+appSettings.DatabaseMenu);
  
  

@@ -44,10 +44,18 @@ namespace MDT.MongoDb
 
         public void Dispose()
         {
-            if (context != null)
-            {
-                context.Dispose();
-            }
+            Dispose(true);
+            GC.SuppressFinalize(this);            
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            // Cleanup
+        }
+
+        ~EmpleadoImpl()
+        {
+            Dispose(false);
         }
     }
 }

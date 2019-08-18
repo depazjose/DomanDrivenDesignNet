@@ -19,3 +19,4 @@ PublishProfiles/
 .testPublish/
 launchSettings.json
 *.bak
+.sonarqube

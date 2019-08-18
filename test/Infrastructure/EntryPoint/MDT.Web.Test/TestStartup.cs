@@ -4,7 +4,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using MDT.Model.Gateway;
+using MDT.UseCase;
+using MDT.MongoDb.Entities;
+using System;
 namespace MDT.Web.Test
 {
     public class TestStartup
@@ -15,12 +18,32 @@ namespace MDT.Web.Test
             Configuration = configuration;
             EnvironmentLocal = environment;
         }
-
         public IHostingEnvironment EnvironmentLocal { get; }
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
+            //var appSettings =  Configuration.GetSection("AppSettings").Get<TPMenuAppSetings>();
+            var appSettings = new
+            {
+                TPMenuDatabaseString = "mongodb://127.0.0.1:27017",
+                DatabaseMenu = "mdt"
+            };
+            var mongoKey = appSettings.TPMenuDatabaseString;
+            var mongoConn = mongoKey;
+            Console.Out.WriteLine(mongoKey + " ... " + appSettings.DatabaseMenu);
+            services.AddScoped<IEmpleadoRepository>(provider =>
+             new EmpleadoAdapter(mongoConn, $"{appSettings.DatabaseMenu}")
+            );
+
+            services.BuildServiceProvider().GetService<IEmpleadoRepository>();
+
+            var servicesProvider = services.BuildServiceProvider();
+
+            services.AddTransient<HomeUseCase>(
+                provider => new HomeUseCase(servicesProvider.GetRequiredService<IEmpleadoRepository>())
+            );
+
             services.AddCors(options =>
             {
                 options.AddPolicy(MyAllowSpecificOrigins,
@@ -32,7 +55,7 @@ namespace MDT.Web.Test
                 });
             });
 
-            //services.AddTransient<MenuController>();
+            services.AddTransient<HomeController>();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 options.CheckConsentNeeded = context => true;
@@ -44,21 +67,21 @@ namespace MDT.Web.Test
             services.AddMvcCore().AddApiExplorer();
         }
 
-
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {                
+            {
                 app.UseDeveloperExceptionPage();
             }
             else
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
-            app.UseCors(MyAllowSpecificOrigins);            
+            app.UseCors(MyAllowSpecificOrigins);
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
             app.UseMvc();
         }
     }

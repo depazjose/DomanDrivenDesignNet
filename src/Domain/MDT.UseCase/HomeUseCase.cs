@@ -31,5 +31,21 @@ namespace MDT.UseCase
                 }
             });
         }
+
+        public Task<Empleado> ObtenerEmpleadoPorCodigo(string codigo)
+        {
+            return Task.Run(() =>
+            {
+                try
+                {
+                    return empleadoRepository.ObtenerEmpleadoPorCodigo(codigo);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
+            });
+        }
     }
 }

@@ -54,8 +54,22 @@ namespace MDT.Web
             };
 
             return Ok(empleados);
-
         }
+
+        [HttpGet]
+        [EnableCors("AllowOrigin")]
+        public async Task<IActionResult> GetEmpleado(string codigo)
+        {
+            var empleado = new 
+            {
+                empleado = await homeUseCase.ObtenerEmpleadoPorCodigo(codigo)
+
+            };
+
+            return Ok(empleado);
+        }
+        
+
 
 
     }

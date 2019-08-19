@@ -20,3 +20,5 @@ PublishProfiles/
 launchSettings.json
 *.bak
 .sonarqube
+coverage*
+opencover.xml

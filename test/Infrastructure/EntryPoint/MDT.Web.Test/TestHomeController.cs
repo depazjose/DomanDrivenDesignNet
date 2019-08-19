@@ -56,5 +56,16 @@ namespace MDT.Web.Test
             Assert.True(jsonResponse.Length>0);
         }
 
+        [Fact]
+        public async Task GetEmpleadoPorCodigo()
+        {
+            var codigo = "12345";
+            var response = await _client.GetAsync($"api/Home/GetEmpleado?codigo={codigo}");
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            JObject empleadoResponse = JObject.Parse(jsonResponse);
+            Assert.Equal(codigo, empleadoResponse["empleado"]["codigo"]);
+        }
+
     }
 }

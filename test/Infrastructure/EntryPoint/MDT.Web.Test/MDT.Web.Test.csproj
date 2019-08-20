@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>  
     <IsPackable>false</IsPackable>
     <ProjectGuid>{b85deac7-711a-4b93-b24c-d3772aefd224}</ProjectGuid>
+    <SonarQubeExclude>true</SonarQubeExclude>
     <SonarQubeTestProject>true</SonarQubeTestProject>
   </PropertyGroup>
 
@@ -15,6 +16,7 @@
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.2.0" />
+    <PackageReference Include="Moq" Version="4.12.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +24,11 @@
     <ProjectReference Include="..\..\..\..\src\Infrastructure\EntryPoint\MDT.Web\MDT.Web.csproj" /> 
   </ItemGroup>
 
-
-
+  <ItemGroup>
+    <None Update="appsettings.Testing.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  
 </Project>

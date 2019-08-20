@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
+using Microsoft.Extensions.Configuration;
 
 namespace MDT.Web.Test
 {
@@ -17,6 +18,7 @@ namespace MDT.Web.Test
         {
             var builder = new WebHostBuilder()
                             .UseEnvironment("Testing")
+                            .ConfigureAppConfiguration(config => config.AddJsonFile("appsettings.Testing.json", optional: false, reloadOnChange: true))
                             .UseStartup<TestStartup>();
 
             Server = new TestServer(builder);
@@ -53,7 +55,7 @@ namespace MDT.Web.Test
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             var jsonResponse = await response.Content.ReadAsStringAsync();
             JObject fooResponse = JObject.Parse(jsonResponse);
-            Assert.True(jsonResponse.Length>0);
+            Assert.True(jsonResponse.Length > 0);
         }
 
         [Fact]

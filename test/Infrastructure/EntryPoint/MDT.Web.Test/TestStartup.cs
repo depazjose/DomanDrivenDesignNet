@@ -23,12 +23,14 @@ namespace MDT.Web.Test
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //var appSettings =  Configuration.GetSection("AppSettings").Get<TPMenuAppSetings>();
+            var appSettings =  Configuration.GetSection("AppSettings").Get<TPMenuAppSetings>();
+            /*
             var appSettings = new
             {
                 TPMenuDatabaseString = "mongodb://127.0.0.1:27017",
                 DatabaseMenu = "mdt"
             };
+            */
             var mongoKey = appSettings.TPMenuDatabaseString;
             var mongoConn = mongoKey;
             Console.Out.WriteLine(mongoKey + " ... " + appSettings.DatabaseMenu);

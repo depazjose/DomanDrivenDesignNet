@@ -1,14 +1,9 @@
-using Moq;
-using Xunit;
-using MDT.UseCase;
+using GenFu;
 using MDT.Model;
 using MDT.Model.Gateway;
-using MDT.MongoDb;
+using Moq;
 using System.Collections.Generic;
-using System.Linq;
-using GenFu;
-using System.Threading.Tasks;
-using System.IO;
+using Xunit;
 
 
 namespace MDT.UseCase.Test
@@ -34,34 +29,32 @@ namespace MDT.UseCase.Test
             mockEmpleadoRepository.Setup(repositorio => repositorio.ObtenerListaEmpleados()).Returns(Empleados);
 
             //Act
-            var resultados = homeUseCase.ObtenerListaEmpleados();
+            var resultados = homeUseCase.ObtenerListaEmpleados().GetAwaiter().GetResult();
 
             //Assert
-            Assert.Equal(resultados.Count, 5);
+            Assert.Equal(5, resultados.Count);
 
         }
 
         private List<Empleado> GetFakeEmpleados()
         {
 
-            IEnumerable<Empleado> empleados = new List<Empleado>();
+            List<Empleado> empleados = new List<Empleado>();
             var i = 1;
 
             var items = A.ListOf<int>(5);
 
             items.ForEach(x =>
             {
-                empleados.Append(
-                    new Empleado(
-                        i.ToString(),
+                Empleado item = new Empleado(
+                    i.ToString(),
                         "Nombre ",
-                        "Apellido "
-                        )
-                        );
+                        "Apellido ");
+                empleados.Add(item);
                 i++;
             });
 
-            return empleados.ToList();
+            return empleados;
 
         }
 
